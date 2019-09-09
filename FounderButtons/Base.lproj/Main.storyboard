@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,88 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FounderButtons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMX-pC-BOC">
+                                <rect key="frame" x="16" y="73" width="382" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="XoY-dE-bOz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.52768731120000001" green="0.13261345029999999" blue="0.3058893681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-Fg-Cws">
+                                <rect key="frame" x="16" y="180" width="382" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="8qD-qv-PKt"/>
+                                </constraints>
+                                <state key="normal" title="Who Founded Google?"/>
+                                <connections>
+                                    <action selector="googleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mwg-F2-v1U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utd-j5-Pt8">
+                                <rect key="frame" x="16" y="224" width="382" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="sN1-S3-sZs"/>
+                                </constraints>
+                                <state key="normal" title="Who Founded Rent the Runway?"/>
+                                <connections>
+                                    <action selector="rtrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="235-oW-z1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiX-zg-wzO">
+                                <rect key="frame" x="16" y="268" width="382" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="4wW-Oc-M1J"/>
+                                </constraints>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dG-QW-BYL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9Z-sC-2Qm">
+                                <rect key="frame" x="16" y="114" width="382" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="G68-Xn-PKW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.8415372968" green="0.79427164790000004" blue="0.66272300480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yMX-pC-BOC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="2S2-io-1q0"/>
+                            <constraint firstItem="utd-j5-Pt8" firstAttribute="top" secondItem="koJ-Fg-Cws" secondAttribute="bottom" constant="8" id="4hk-0m-gS7"/>
+                            <constraint firstItem="koJ-Fg-Cws" firstAttribute="top" secondItem="b9Z-sC-2Qm" secondAttribute="bottom" constant="23" id="H46-Qk-yQ9"/>
+                            <constraint firstItem="utd-j5-Pt8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LuL-zL-m4X"/>
+                            <constraint firstItem="xiX-zg-wzO" firstAttribute="top" secondItem="utd-j5-Pt8" secondAttribute="bottom" constant="8" id="Qej-s2-v1l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xiX-zg-wzO" secondAttribute="trailing" constant="16" id="XSB-bM-5T0"/>
+                            <constraint firstItem="koJ-Fg-Cws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YR6-GG-K7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b9Z-sC-2Qm" secondAttribute="trailing" constant="16" id="aHX-jj-pef"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="utd-j5-Pt8" secondAttribute="trailing" constant="16" id="eWO-0O-QB3"/>
+                            <constraint firstItem="yMX-pC-BOC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f4y-VQ-qxj"/>
+                            <constraint firstItem="b9Z-sC-2Qm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="gWu-4N-ML0"/>
+                            <constraint firstItem="b9Z-sC-2Qm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hK4-lZ-0zk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yMX-pC-BOC" secondAttribute="trailing" constant="16" id="kD5-sF-OCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="koJ-Fg-Cws" secondAttribute="trailing" constant="16" id="vQ8-HC-hVb"/>
+                            <constraint firstItem="xiX-zg-wzO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xe6-Nd-vCs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="b9Z-sC-2Qm" id="576-Hl-dXe"/>
+                        <outlet property="topLabel" destination="yMX-pC-BOC" id="Pyw-ed-9iM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>
